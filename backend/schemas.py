@@ -17,9 +17,7 @@ class HeadlineCandidate(BaseModel):
 class ClassificationResult(BaseModel):
     label: str
     score: float
-    matchedKeywords: list[str] = Field(default_factory=list)
     mode: str | None = None
-    rawLabel: str | None = None
     error: str | None = None
 
 

@@ -1,0 +1,101 @@
+﻿id,source,url,title,label,predicted_label,score,correct
+C001,Yahoo,https://tw.news.yahoo.com/%E6%B0%91%E9%80%B2%E9%BB%A8%E7%B1%8D%E7%AB%8B%E5%A7%94%E6%9E%97%E5%AE%9C%E7%91%BE%E6%B6%89%E8%A9%90%E5%8A%A9%E7%90%86%E8%B2%BB%E9%80%BE1412%E8%90%AC-%E4%B8%80%E5%AF%A9%E5%88%A4%E5%88%917%E5%B9%B4-064058524.html,民進黨籍立委林宜瑾涉詐助理費逾1412萬 一審判刑7年,non_clickbait,non_clickbait,0.03,TRUE
+C002,Yahoo,https://tw.news.yahoo.com/%E5%9C%B0%E7%93%9C%E8%91%89-%E9%80%99%E6%A8%A3%E7%85%AE-%E6%8A%97%E7%99%8C%E6%9C%80%E6%9C%89%E6%95%88-%E5%A4%9A%E9%85%9A%E6%9A%B4%E5%A2%9E4-5%E5%80%8D-144400021.html,地瓜葉「這樣煮」抗癌最有效：多酚暴增4.5倍,clickbait,clickbait,0.61,TRUE
+C003,Yahoo,https://tw.news.yahoo.com/%E9%A2%B1%E9%A2%A8%E5%B7%B4%E5%A8%81%E7%94%9F%E6%88%90-%E6%9C%89%E6%A9%9F%E6%9C%83%E5%A2%9E%E7%82%BA%E5%BC%B7%E9%A2%B1-%E6%9C%80%E5%BF%AB%E4%BB%8A%E9%9B%99%E9%A2%B1%E5%85%B1%E8%88%9E-021131320.html,颱風巴威生成 有機會增為強颱 最快今雙颱共舞,non_clickbait,non_clickbait,0.05,TRUE
+C004,Yahoo,https://tw.news.yahoo.com/%E5%AD%90%E7%91%9C%E8%A6%AA%E8%87%AA%E9%97%A2%E8%AC%A0-%E5%82%B327%E6%AD%B2%E7%94%9F%E6%97%A5%E8%B1%AA%E7%A0%B86%E7%99%BE%E8%90%AC%E8%B2%B7%E4%BF%9D%E6%99%82%E6%8D%B7-%E5%A5%B9%E8%BF%94%E5%8F%B0%E6%BE%84%E6%B8%85-%E4%B8%8D%E6%98%AF%E6%88%91%E7%9A%84%E8%BB%8A-055700849.html,子瑜親自闢謠！傳27歲生日豪砸6百萬買保時捷 她返台澄清：不是我的車,non_clickbait,non_clickbait,0.06,TRUE
+C005,Yahoo,https://tw.news.yahoo.com/%E4%B8%AD%E5%9C%8B%E7%8F%BE%E8%B1%A1%E7%B4%9A%E9%81%8A%E6%88%B2-%E5%BC%95%E7%8B%BC%E5%85%A5%E5%AE%A4-%E6%88%80%E8%88%87%E6%B7%B1%E7%A9%BA-%E5%A6%82%E4%BD%95%E8%A7%B8%E7%99%BC%E7%8E%A9%E5%AE%B6%E6%8A%B5%E5%88%B6-%E5%AE%98%E6%96%B9%E6%89%B9%E8%A9%95-003716035.html,中國現象級遊戲「引狼入室」：《戀與深空》如何觸發玩家抵制、官方批評,clickbait,non_clickbait,0.16,FALSE
+C006,Yahoo,https://tw.sports.yahoo.com/news/%E9%80%99%E4%B8%8D%E6%98%AF%E8%94%A1%E4%BE%9D%E6%9E%97%E5%97%8E-%E5%A2%A8%E8%A5%BF%E5%93%A5%E7%B1%8D%E7%BE%8E%E5%A5%B3%E8%A3%81%E5%88%A4%E6%92%9E%E8%87%89jolin-%E7%B6%B2%E5%8F%8B-%E5%A5%BD%E5%83%8F%E9%9B%99%E8%83%9E%E8%83%8E-063354069.html,「這不是蔡依林嗎？」墨西哥籍美女裁判撞臉Jolin 網友：好像雙胞胎,non_clickbait,non_clickbait,0.23,TRUE
+C007,Yahoo,https://tw.news.yahoo.com/%E5%A1%91%E5%8C%96%E8%82%A1%E9%80%86%E5%8B%A2%E7%87%92%E7%87%99%E7%87%99-%E5%8F%B0%E5%A1%91%E9%80%993%E5%AF%B6-%E5%B8%B6%E9%87%8F%E4%B8%8A%E6%94%BB-%E5%8F%B0%E9%81%94%E5%8C%96-%E4%B8%AD%E7%9F%B3%E5%8C%96%E5%85%A8%E5%99%B4%E7%A0%B4%E5%8D%8A%E6%A0%B9-081000173.html,塑化股逆勢燒燙燙！「台塑這3寶」帶量上攻 台達化、中石化全噴破半根「這檔」卻獨收黑,clickbait,non_clickbait,0.02,FALSE
+C008,Yahoo,https://tw.news.yahoo.com/%E6%AF%8F%E5%A4%A9%E6%97%A9%E7%9D%A11%E5%B0%8F%E6%99%82%E7%AB%9F%E9%BB%98%E9%BB%98%E7%98%A612kg-%E9%86%AB%E5%B8%AB%E6%8F%AD-%E4%B8%8D%E7%94%A8%E7%AF%80%E9%A3%9F%E8%AE%8A%E7%98%A6-%E7%9C%9F%E7%9B%B8-%E5%8F%AA%E8%A6%81%E7%9D%A1%E5%89%8D%E9%A4%8A%E6%88%903%E5%A4%A7%E7%BF%92%E6%85%A3%E6%83%B3%E8%83%96%E4%B9%9F%E9%9B%A3-000000609.html,每天早睡1小時竟默默瘦12kg？醫師揭「不用節食變瘦」真相，只要睡前養成3大習慣想胖也難,clickbait,clickbait,0.94,TRUE
+C009,Yahoo,https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84%E9%B3%B3%E5%B1%B1%E8%BB%8A%E7%A6%8D-%E6%95%91%E8%AD%B7%E8%BB%8A%E6%80%A5%E8%A8%BA%E5%AE%A4%E5%89%8D%E6%92%9E%E9%A3%9B%E9%A8%8E%E5%A3%AB-%E9%A9%9A%E9%9A%AA%E7%95%AB%E9%9D%A2%E6%9B%9D-073026053.html,高雄鳳山車禍！救護車急診室前撞飛騎士 驚險畫面曝,non_clickbait,non_clickbait,0.29,TRUE
+C010,Yahoo,https://tw.news.yahoo.com/%E7%BE%8E%E5%9C%8B%E9%A9%9A%E5%82%B3%E6%AD%A3%E9%9D%A2%E8%BF%8E%E6%88%B0%E4%B8%AD%E5%85%B1-%E4%B8%8D%E7%88%BD%E6%83%A1%E6%B3%95%E8%B7%A8%E5%A2%83%E6%8A%93%E4%BA%BA-%E5%9C%8B%E5%8B%99%E9%99%A2%E8%AD%89%E5%AF%A6-%E5%B0%87%E6%8D%8D%E8%A1%9B%E4%B8%BB%E6%AC%8A-074532599.html,美國驚傳正面迎戰中共！不爽惡法跨境抓人 國務院證實：將捍衛主權,non_clickbait,non_clickbait,0.03,TRUE
+C011,Yahoo,https://tw.news.yahoo.com/%E9%83%B5%E8%BC%AA-%E7%B4%85%E5%AF%B6%E7%9F%B3%E5%85%AC%E4%B8%BB%E8%99%9F-%E7%88%86%E8%AB%BE%E7%BE%85%E7%97%85%E6%AF%92%E7%96%AB%E6%83%85-%E9%80%BE120%E4%BA%BA%E7%BE%A4%E8%81%9A%E6%84%9F%E6%9F%93-042818178.html,郵輪「紅寶石公主號」爆諾羅病毒疫情！逾120人群聚感染,non_clickbait,non_clickbait,0.05,TRUE
+C012,Yahoo,https://tw.news.yahoo.com/%E7%A7%91%E9%9A%86%E5%A4%A7%E6%95%99%E5%A0%82%E9%96%8B%E6%94%B6%E9%96%80%E7%A5%A8-%E9%A6%96%E6%97%A5%E6%83%85%E6%B3%81%E5%A6%82%E4%BD%95-074600753.html,科隆大教堂開收門票 首日情況如何？,clickbait,non_clickbait,0.21,FALSE
+C013,Yahoo,https://tw.news.yahoo.com/%E9%81%B8%E9%A4%90%E5%BB%B3%E7%9C%8B%E8%A9%95%E8%AB%96%E5%B0%B1%E8%83%BD%E9%81%BF%E9%9B%B7-%E4%B8%8D%E5%8F%AA%E6%98%9F%E7%B4%9A%E5%85%A7%E5%B9%95-%E5%85%A7%E8%A1%8C%E6%9B%9D%E7%B6%B2%E7%B4%85%E6%8E%A8%E8%96%A61%E7%B4%B0%E7%AF%80%E8%A6%81%E5%B0%8F%E5%BF%83-070100928.html,選餐廳看評論就能避雷？不只星級內幕...內行曝網紅推薦1細節要小心,clickbait,clickbait,0.96,TRUE
+C014,Yahoo,https://tw.news.yahoo.com/%E6%B5%AA%E7%8B%97%E9%81%AD%E9%81%87%E8%BB%8A%E7%A6%8D%E9%9B%99%E8%85%BF%E9%AA%A8%E6%8A%98-%E5%8F%B8%E6%A9%9F%E8%87%AA%E7%99%BC%E6%80%A7-%E5%8B%9F%E6%AC%BE-%E5%B1%95%E9%96%8B-%E5%A0%B4%E6%84%9B%E5%BF%83%E6%8E%A5%E5%8A%9B-040953215.html,浪狗遭遇車禍雙腿骨折！司機自發性「募款」展開一場愛心接力,non_clickbait,non_clickbait,0.15,TRUE
+C015,Yahoo,https://tw.news.yahoo.com/%E5%A4%A7%E5%92%96%E5%A5%B3%E6%98%9F%E5%87%BA%E4%BA%8B%E4%BA%86-%E6%B3%B3%E6%B1%A0%E6%BB%91%E5%80%92%E6%92%9E%E6%96%B7%E8%82%8B%E9%AA%A8%E6%80%A5%E9%80%81%E9%86%AB%E6%90%B6%E5%91%BD-%E9%A9%9A%E4%BA%BA%E5%82%B7%E6%B3%81-%E6%9B%9D%E5%85%89-082600473.html,大咖女星出事了！泳池滑倒撞斷肋骨急送醫搶命 「驚人傷況」曝光,clickbait,clickbait,0.45,TRUE
+C016,ETtoday,https://www.ettoday.net/news/20260702/3194155.htm,網內互打！竹聯幫明仁會2男爆口角　1人背部中2刀送醫,non_clickbait,non_clickbait,0.03,TRUE
+C017,ETtoday,https://www.ettoday.net/news/20260703/3189202.htm,獨／海巡查緝隊長多次帶女性友人過夜　勒令提前退休,non_clickbait,non_clickbait,0.04,TRUE
+C018,ETtoday,https://www.ettoday.net/news/20260701/3193029.htm,長眠聖母峰近30年！名地標「綠靴子」遺體要回家了　真實身分曝光,clickbait,non_clickbait,0.04,FALSE
+C019,ETtoday,https://fashion.ettoday.net/news/3193256,人緣好不是靠討好！「真正受歡迎的人」都有5個共同特質,clickbait,clickbait,0.96,TRUE
+C020,ETtoday,https://www.ettoday.net/news/20260702/3194191.htm,快訊∕大雷雨炸2縣市「防冰雹」　國家警報響,clickbait,non_clickbait,0.07,FALSE
+C021,ETtoday,https://pets.ettoday.net/news/3194119,毛孩也能吃冰！倍力3新品攻寵物市場　寵物展現場最高折600,non_clickbait,non_clickbait,0.06,TRUE
+C022,ETtoday,https://www.ettoday.net/news/20260702/3194168.htm,鐵了心砍光文化部4738萬媒宣費！　翁曉玲嗆綠營：將再提案全刪,non_clickbait,non_clickbait,0.02,TRUE
+C023,ETtoday,https://finance.ettoday.net/news/3194080,台積電還撐得住嗎？投顧董座揭2大變數：目前行情驚驚漲,clickbait,clickbait,0.92,TRUE
+C024,ETtoday,https://www.ettoday.net/news/20260702/3194165.htm,詐騙犯罪猖獗！　反詐協會民調： 73.3%支持公投推動鞭刑打詐,non_clickbait,non_clickbait,0.02,TRUE
+C025,ETtoday,https://star.ettoday.net/news/3194089,香蕉心疼妻「懷孕一天狂吐十幾次」　吐無助心聲：過程太偉大,non_clickbait,non_clickbait,0.18,TRUE
+C026,ETtoday,https://game.ettoday.net/article/3194024.htm,情侶想爽玩《GTA 6》定契約！任務完成才能抱抱、不能擋螢幕,non_clickbait,non_clickbait,0.12,TRUE
+C027,ETtoday,https://www.ettoday.net/news/20260702/3194145.htm,同台張善政、高虹安　徐欣瑩：桃竹苗大矽谷不該僅是地圖上的名詞,non_clickbait,non_clickbait,0.02,TRUE
+C028,ETtoday,https://sports.ettoday.net/news/3194613,葛拉斯諾復健進度落後　復出仍遙遙無期　羅伯斯：還沒開始牛棚練投,non_clickbait,non_clickbait,0.01,TRUE
+C029,ETtoday,https://www.ettoday.net/news/20260702/3193812.htm,爸突說「我的身體有變化」　她急問細節！一聽原因笑了：被打敗,clickbait,clickbait,0.98,TRUE
+C030,ETtoday,https://health.ettoday.net/news/3193046,以為養生！肌肉男健檢「腎功能剩50」傻了　醫示警2元凶正在毀腎,clickbait,clickbait,0.54,TRUE
+C031,UDN,https://udn.com/news/story/7326/9603193,好消息！雲林嚴重地層下陷區首度掛零 高鐵安全值大增歸功這些因素,clickbait,clickbait,0.47,TRUE
+C032,UDN,https://pets.udn.com/pets/story/124349/9602854?list_ch2_indexgold,常常半夜醒來發現「狗狗正盯著你看」？獸醫解析偷看心理：超甜蜜,clickbait,clickbait,0.92,TRUE
+C033,UDN,https://udn.com/news/story/6813/9603041?list_ch2_index,16童被關14平方公尺房4年！警察進屋驚呆：家畜都住得比他們好,non_clickbait,non_clickbait,0.25,TRUE
+C034,UDN,https://udn.com/news/story/7266/9604792?list_ch2_index,影／全球首例！紅頭平甲蛛毒液直攻眼球 22歲女血腫險失明,non_clickbait,non_clickbait,0.14,TRUE
+C035,UDN,https://udn.com/news/story/6811/9602567?list_ch2_index,OpenAI提議送美國政府5%股權！全民共享AI財富 化解政治阻力,non_clickbait,non_clickbait,0.02,TRUE
+C036,UDN,https://udn.com/news/story/120911/9601877?list_ch2_index,別急著買商務艙！內行公開不同航程攻略：這樣買最划算,clickbait,clickbait,0.89,TRUE
+C037,UDN,https://udn.com/news/story/7269/9602352?list_ch2_index,普考新鮮人領薪崩潰！退撫扣逾7千！她實領3萬喊想逃 過來人曝原因,clickbait,clickbait,0.73,TRUE
+C038,UDN,https://udn.com/news/story/6811/9602713?list_ch2_index,日圓續貶！日本官方不動聲色 傳改採突襲式干預重擊投機客,non_clickbait,non_clickbait,0.02,TRUE
+C039,UDN,https://udn.com/news/story/6813/9602864?list_ch2_index,川普翻臉第一任代表作！拒續美墨加協定 貿易代表酸加國「真有意思」,non_clickbait,non_clickbait,0.03,TRUE
+C040,UDN,https://udn.com/news/story/7002/9602190?list_ch2_index,NBA∕令人困惑的布朗與喬治交易案 ESPN評分塞爾蒂克D+、76人A-,non_clickbait,non_clickbait,0.01,TRUE
+C041,UDN,https://udn.com/news/story/124940/9602340?list_ch2_index,1300噸問題油恐早已吃下肚？林淑芬爆「下游南僑驗出超標才揭發」,non_clickbait,non_clickbait,0.03,TRUE
+C042,UDN,https://tech.udn.com/tech/story/124457/9602702?list_ch2_index,等到了！雙北搭公車「自動加值」開通 不怕餘額不足、免跑捷運和超商,non_clickbait,non_clickbait,0.04,TRUE
+C043,UDN,https://udn.com/news/story/7251/9603061?from=udn_ch2_menu_v2_main_index,這兩檔靠「AI護身符」逆勢走強 再不看就來不及上車了,clickbait,clickbait,0.53,TRUE
+C044,UDN,https://style.udn.com/style/story/8064/9601960?from=udn_ch2_menu_v2_main_index,終於等來英文老師和體育老師的婚禮__ 泰勒絲世紀婚禮細節曝光 MSG千人派對保密規格超誇張！,clickbait,clickbait,0.67,TRUE
+C045,UDN,https://health.udn.com/health/story/5684/9601912?from=udn_ch2_menu_v2_main_index,肋眼怎麼挑才嫩又多汁？4個挑選重點一看就知是不是好牛排,clickbait,clickbait,0.97,TRUE
+C046,Yahoo,https://tw.news.yahoo.com/%E7%9F%A5%E5%90%8D%E4%B8%AD%E9%86%AB%E8%A8%BA%E6%89%80%E7%AA%81%E5%85%AC%E5%91%8A-%E9%99%A2%E9%95%B7%E8%BE%AD%E4%B8%96-%E6%B0%B8%E4%B9%85%E6%AD%87%E6%A5%AD-%E5%9C%A8%E5%9C%B0%E4%BA%BA%E4%B8%8D%E6%8D%A8-%E5%A4%AA%E7%AA%81%E7%84%B6%E4%BA%86-235134740.html,知名中醫診所突公告「院長辭世」永久歇業 在地人不捨：太突然了,non_clickbait,non_clickbait,0.24,TRUE
+C047,Yahoo,https://tw.news.yahoo.com/%E8%82%AF%E4%BA%9E%E4%B8%8D%E6%89%BF%E8%AA%8D%E5%8F%B0%E7%81%A3%E8%AD%B7%E7%85%A7-%E6%9E%97%E4%BD%B3%E9%BE%8D-%E5%B0%9A%E6%9C%AA%E6%8E%A5%E7%8D%B2%E6%8B%92%E7%B5%95%E5%85%A5%E5%A2%83%E6%A1%88%E4%BE%8B-093903666.html,肯亞不承認台灣護照？林佳龍：尚未接獲拒絕入境案例,non_clickbait,non_clickbait,0.03,TRUE
+C048,Yahoo,https://tw.news.yahoo.com/%E5%89%9B%E7%B5%90%E6%9D%9F-%E6%B5%AA%E5%A7%907-%E6%9B%BE%E6%B2%9B%E6%85%88%E9%A9%9A%E5%82%B3%E8%A3%9C%E4%BD%8D-%E6%AD%8C%E6%89%8B2026-%E6%A8%82%E8%A9%95%E5%A4%A7%E8%AE%9A%E5%AF%A6%E5%8A%9B-215000499.html,剛結束《浪姐7》！曾沛慈驚傳補位《歌手2026》 樂評大讚實力：比楊丞琳更適合競技,non_clickbait,non_clickbait,0.02,TRUE
+C049,Yahoo,https://tw.news.yahoo.com/%E9%8A%85%E9%91%BC%E7%81%A3%E6%9B%B8%E5%BA%97%E6%9E%97%E6%A6%AE%E5%9F%BA%E7%97%85%E9%80%9D-%E7%B5%82%E5%B9%B470%E6%AD%B2-135320700.html,銅鑼灣書店林榮基病逝，終年70歲,non_clickbait,non_clickbait,0.02,TRUE
+C050,Yahoo,https://tw.news.yahoo.com/%E6%9C%80%E9%9B%A3%E8%A8%82%E5%90%83%E5%88%B0%E9%A3%BD-%E5%B3%B6%E8%AA%9E%E5%8F%B0%E4%B8%AD%E5%BA%97-%E6%9C%88%E9%96%8B%E5%B9%95-%E5%85%A8%E6%96%B0%E8%A8%82%E4%BD%8D%E6%96%B9%E5%BC%8F%E6%9B%9D%E5%85%89-%E9%80%99%E9%A1%9E%E4%BA%BA%E5%8F%AF%E4%BA%AB%E6%90%B6%E5%85%88%E8%A8%82-000000134.html,最難訂吃到飽「島語台中店」７月開幕！全新訂位方式曝光，這類人可享搶先訂,clickbait,clickbait,0.31,TRUE
+C051,Yahoo,https://tw.news.yahoo.com/%E6%B3%A8%E5%AE%9A%E5%9C%A8%E5%9E%83%E5%9C%BE%E5%A0%86%E8%A3%A1%E6%89%BE%E5%B0%8D%E8%B1%A1-%E7%88%9B%E6%A1%83%E8%8A%B1%E6%AF%94%E6%AD%A3%E6%A1%83%E8%8A%B1%E9%82%84%E5%A4%9A%E7%9A%843%E6%98%9F%E5%BA%A7-%E7%8D%85%E5%AD%90%E6%84%9B%E9%9D%A2%E5%AD%90%E5%A5%BD%E9%A8%99-%E9%80%99%E4%BD%8D-%E6%A0%B9%E6%9C%AC%E5%90%B8%E6%B8%A3%E7%A3%81%E9%90%B5-000000978.html,注定在垃圾堆裡找對象？爛桃花比正桃花還多的3星座！獅子愛面子好騙，「這位」根本吸渣磁鐵,clickbait,clickbait,0.93,TRUE
+C052,Yahoo,https://tw.news.yahoo.com/%E5%8F%B0%E7%81%A3%E5%B0%8F%E5%9B%9B%E8%BF%91%E8%A6%96%E7%8E%87%E5%B7%B2%E9%80%BE5%E6%88%90-%E5%B0%88%E5%AE%B6-%E8%BF%91%E8%A6%96%E7%AE%A1%E7%90%86%E4%B8%8D%E8%83%BD%E5%8F%AA%E9%9D%A0%E5%96%AE-%E6%96%B9%E6%B3%95-020000297.html,台灣小四近視率已逾5成 專家：近視管理不能只靠單一方法,non_clickbait,non_clickbait,0.12,TRUE
+C053,Yahoo,https://tw.news.yahoo.com/%E5%93%88%E7%B1%B3%E5%B0%BC%E5%A4%A7%E8%A6%8F%E6%A8%A1%E8%91%AC%E7%A6%AE%E5%8D%B3%E5%B0%87%E8%88%89%E8%A1%8C-%E4%BC%8A%E6%9C%97%E5%97%86%E7%BE%8E%E4%BB%A5-%E6%95%A2%E6%94%BB%E6%93%8A%E5%B0%B1%E5%A0%B1%E5%BE%A9-025154619.html,哈米尼大規模葬禮即將舉行！伊朗嗆美以：敢攻擊就報復,non_clickbait,non_clickbait,0.01,TRUE
+C054,Yahoo,https://tw.news.yahoo.com/%E4%BA%82%E5%99%B4%E7%B4%85%E6%BC%86-x-%E5%A4%AA%E9%AD%AF%E9%96%A3%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92%E6%B7%AA%E5%A1%97%E9%B4%89%E7%89%86-%E7%84%A1%E6%A5%AD%E7%94%B7%E5%9B%82%E5%BC%B5%E8%A1%8C%E5%BE%91%E9%81%AD%E8%AD%A6%E9%80%AE%E6%8D%95-023300516.html,亂噴紅漆「X」！太魯閣國家公園淪塗鴉牆 無業男囂張行徑遭警逮捕,non_clickbait,non_clickbait,0.08,TRUE
+C055,Yahoo,https://tw.news.yahoo.com/%E5%8F%B0%E6%9D%B1%E9%87%8B%E8%BF%A6%E5%9C%92%E8%80%81%E8%BE%B2-%E8%BB%8A%E5%BA%95%E5%90%8C%E5%A7%BF%E5%8B%A25%E5%88%86%E9%90%98-%E9%A9%9A%E8%A6%BA%E5%87%BA%E4%BA%8B-%E9%80%81%E9%86%AB%E4%B8%8D%E6%B2%BB-023053485.html,台東釋迦園老農「車底同姿勢5分鐘」！驚覺出事…送醫不治,non_clickbait,clickbait,0.49,FALSE
+C056,Yahoo,https://tw.news.yahoo.com/%E6%95%B4%E7%90%86iphone%E6%A1%8C%E9%9D%A2%E5%83%8F%E7%8E%A9%E9%AC%BC%E6%8A%93%E4%BA%BA-%E6%9E%9C%E8%BF%B7%E6%95%99%E6%AD%A3%E7%A2%BA%E6%B3%95-%E7%A7%92%E4%B8%9F%E9%80%B2%E8%B3%87%E6%96%99%E5%A4%BE-024527653.html,整理iPhone桌面像玩鬼抓人？果迷教正確法：秒丟進資料夾,clickbait,clickbait,0.87,TRUE
+C057,Yahoo,https://tw.news.yahoo.com/%E8%8F%9C%E9%B3%A5%E8%80%81%E5%B8%AB%E5%BF%85%E7%9C%8B-%E5%89%8D%E8%BC%A9%E6%BF%80%E6%8E%A8-%E8%B2%93%E7%A0%82-%E7%A5%9E%E6%95%91%E6%8F%B4-%E9%81%8E%E4%BE%86%E4%BA%BA%E6%8F%AD%E5%A6%99%E7%94%A8-110500008.html,菜鳥老師必看！前輩激推「貓砂」神救援 過來人揭妙用：比拖把更乾淨,clickbait,non_clickbait,0.24,FALSE
+C058,Yahoo,https://tw.news.yahoo.com/%E6%98%94-%E6%98%9F%E9%9A%9B%E5%AF%B6%E8%B2%9D-%E7%AB%A5%E6%98%9F%E9%9B%A2%E4%B8%96-%E6%B3%95%E9%86%AB%E8%AD%89%E5%AF%A6-%E6%AD%BB%E6%96%BC%E6%84%9B%E6%BB%8B%E7%97%85-024314270.html,昔《星際寶貝》童星離世！法醫證實「死於愛滋病」,non_clickbait,non_clickbait,0.28,TRUE
+C059,Yahoo,https://tw.news.yahoo.com/%E7%82%BA744%E8%90%AC-%E7%A7%80%E7%8F%8D%E8%8F%87%E9%81%AE%E9%99%BD%E5%82%98-%E7%A7%BB%E8%B5%B0%E6%A8%B9%E6%9C%A8-%E8%94%A3%E8%90%AC%E5%AE%89%E8%AA%8D%E4%BA%86-%E9%80%99%E5%85%A9%E4%BB%B6%E4%BA%8B-024251107.html,為744萬「秀珍菇遮陽傘」移走樹木？蔣萬安認了「這兩件事」,clickbait,clickbait,0.92,TRUE
+C060,Yahoo,https://tw.news.yahoo.com/%E6%97%A5%E6%9C%AC%E6%B8%9B%E9%87%8D%E5%90%8D%E9%86%AB%E9%9D%A0-%E5%92%96%E5%95%A1-1%E7%89%A9-%E7%8B%82%E7%98%A625kg-%E5%96%9D%E5%B0%8D%E6%99%82%E6%A9%9F%E6%8E%A7%E9%A3%9F%E6%85%BE-000000413.html,日本減重名醫靠「咖啡＋1物」狂瘦25kg！喝對時機控食慾、穩血糖！,clickbait,clickbait,0.31,TRUE
+C061,ETtoday,https://www.ettoday.net/news/20260703/3194559.htm,女友被擄走警告才知「當小三」　人夫認出軌賠妻30萬,non_clickbait,clickbait,0.62,FALSE
+C062,ETtoday,https://www.ettoday.net/news/20260703/3194578.htm,品質粗糙！6.4萬顆「山寨戰鬥陀螺」險入境　旋轉時恐碎裂噴飛,non_clickbait,non_clickbait,0.09,TRUE
+C063,ETtoday,https://www.ettoday.net/news/20260703/3194357.htm,診所突宣布「院長過世」即起停業！在地一票病患震驚：不敢相信,clickbait,clickbait,0.55,TRUE
+C064,ETtoday,https://house.ettoday.net/news/3194562,2年股價翻12倍！　AI測試設備霸主搶訂單「狂掃大雅廠房」,non_clickbait,non_clickbait,0.11,TRUE
+C065,ETtoday,https://travel.ettoday.net/article/3177711.htm,問安樂市場在地攤商都推這間！滑Q粿仔＋油蔥香湯底　黑白切必點,clickbait,clickbait,0.85,TRUE
+C066,ETtoday,https://www.ettoday.net/news/20260703/3194569.htm,院長辭世診所停業　名醫背景曝光如「華佗再世」,non_clickbait,non_clickbait,0.21,TRUE
+C067,ETtoday,https://forum.ettoday.net/news/3194566,如何看待最近幾份縣市長選舉民調？,clickbait,clickbait,0.81,TRUE
+C068,ETtoday,https://health.ettoday.net/news/3194579,網傳壯陽藥可防中風？　醫師警告：亂吃恐引發致命危機,non_clickbait,clickbait,0.73,FALSE
+C069,ETtoday,https://www.ettoday.net/news/20260703/3194492.htm,李多慧請客「為何選在海底撈？」　原因很用心：把台灣人都當朋友,clickbait,non_clickbait,0.16,FALSE
+C070,ETtoday,https://game.ettoday.net/article/3194356.htm,任天堂社長親回《寶可夢卡牌》炒價亂象：視情況提供必要協助,non_clickbait,non_clickbait,0.03,TRUE
+C071,ETtoday,https://ai.ettoday.net/news/3194539,特斯拉緊急限制員工AI預算　除自家xAI外每人每周僅能花200美元,non_clickbait,non_clickbait,0.04,TRUE
+C072,ETtoday,https://www.ettoday.net/news/20260703/3194527.htm,虐死杜告犬「麻繩抽打鐵鍊勒頸」頭骨碎裂丟草叢　惡飼主下場曝,clickbait,non_clickbait,0.05,FALSE
+C073,ETtoday,https://www.ettoday.net/news/20260703/3194534.htm,曾馨瑩曾離家出走！她曝「郭台銘爆密會女球友」內幕：不奇怪,clickbait,non_clickbait,0.07,FALSE
+C074,ETtoday,https://www.ettoday.net/news/20260703/3194517.htm,大齡男想跟正妹談戀愛　下場「存款剩151元」還被判刑,clickbait,clickbait,0.34,TRUE
+C075,ETtoday,https://www.ettoday.net/news/20260703/3194465.htm,蝦皮催單神招曝光？「按1鍵秒出貨」驚呆一票人　賣家怒：會封鎖,clickbait,clickbait,0.75,TRUE
+C076,UDN,https://vip.udn.com/vip/story/121940/9604280?from=udn_ch2_menu_v2_main_index,韓國瑜訪美見國防部與白宮官員 在野黨讀到啥弦外之音,clickbait,non_clickbait,0.21,FALSE
+C077,UDN,https://udn.com/news/story/7320/9604771,剛還完書…男大生走入北市圖書館民生分館廁所 墜5樓高送醫亡,non_clickbait,non_clickbait,0.11,TRUE
+C078,UDN,https://global.udn.com/global_vision/story/8663/9602816?from=udn_ch2_menu_v2_main_index,英國已無治理可能？10年換6名首相，是首相大位太難坐，還是袂曉駛船嫌溪彎？,clickbait,non_clickbait,0.18,FALSE
+C079,UDN,https://udn.com/news/story/120915/9602390,好市多699元曬衣夾值得買？網友激推「一夾傳三代」：人走了它還在,non_clickbait,non_clickbait,0.29,TRUE
+C080,UDN,https://style.udn.com/style/story/8064/9604351?list_ch2_indexgold,攀上帝國大廈的兩個「浪漫瘋子」是誰？Netflix紀錄片主角再登高空 在危險與浪漫之間反覆書寫愛,clickbait,clickbait,0.62,TRUE
+C081,UDN,http://udn.com/page/topic/28496,出示「QR Code付款碼」就是同意付款,clickbait,clickbait,0.77,TRUE
+C082,UDN,https://woman.udn.com/woman/story/123164/9604635?list_ch2_index,卡司再強也救不回！網評「本季最不值得追」陸劇TOP5，《雲秀行》神級漫改竟淪寶寶古偶？,clickbait,clickbait,0.43,TRUE
+C083,UDN,https://udn.com/news/story/7321/9604176?list_ch2_index,媽才過世房產怎變哥的？桃園女為遺產開撕怒告兄長...卻踢鐵板,clickbait,clickbait,0.35,TRUE
+C084,UDN,https://udn.com/news/story/120912/9604327?list_ch2_index,被問認識郭董女球友？賈永婕1句話酸爆 網讚：優雅又有智慧,clickbait,clickbait,0.85,TRUE
+C085,UDN,https://udn.com/news/story/7315/9604387?list_ch2_index,出國免費玩還有錢拿？人蛇集團誘國人出借護照助偷渡加拿大 9嫌遭起訴,non_clickbait,non_clickbait,0.07,TRUE
+C086,UDN,https://udn.com/news/story/6656/9603408,其他太陽都不敵賴總統！沈富雄鐵口直斷2028大選 國民黨只能派他上陣,clickbait,non_clickbait,0.05,FALSE
+C087,UDN,https://udn.com/news/story/124940/9603017?from=udn_idlepage_ch2,1300噸致癌物超標油流入市面！ 4大超商清查急發聲僅這家超商中鏢,clickbait,clickbait,0.31,TRUE
+C088,UDN,https://pets.udn.com/pets/story/122674/9604952?list_ch2_indexgold,路邊撿到「超萌黑毛球奶汪」！身世大逆轉竟是二級國寶神獸,clickbait,clickbait,0.84,TRUE
+C089,UDN,https://stars.udn.com/star/story/10089/9604551?from=udn_ch2_menu_v2_main_index,TWICE周子瑜媽媽揭密！每月飛韓國當「家庭主婦」　力挺女兒高雄SOLO首秀,non_clickbait,non_clickbait,0.09,TRUE
+C090,UDN,https://health.udn.com/health/story/5966/9596971?from=udn_ch2_menu_v2_main_index,陰道有氣味如何判斷是正常或感染？造成陰道異味5病因、預防方法一次看,clickbait,clickbait,0.91,TRUE
+C091,Yahoo,https://tw.news.yahoo.com/%E4%B8%89%E9%B6%AF%E7%B7%9A%E9%A9%9A%E8%A6%8B-3%E5%80%8B2%E8%99%9F%E5%87%BA%E5%8F%A3-%E6%B0%91%E7%9C%BE%E5%82%BB%E7%9C%BC-%E7%B4%84%E8%A6%8B%E9%9D%A2%E5%88%B0%E5%BA%95%E8%A6%81%E5%8E%BB%E5%93%AA-%E5%80%8B-041358513.html,三鶯線驚見「3個2號出口」民眾傻眼：約見面到底要去哪一個？,non_clickbait,clickbait,0.38,FALSE
+C092,Yahoo,https://tw.news.yahoo.com/%E7%A0%B8%E7%99%BE%E8%90%AC%E8%AB%8B%E7%B2%89%E7%B5%B2%E5%90%83%E6%B5%B7%E5%BA%95%E6%92%88-%E6%9D%8E%E5%A4%9A%E6%85%A7%E8%A2%AB%E5%95%8F-%E7%82%BA%E4%BD%95%E4%B8%8D%E9%81%B8%E5%8F%B0%E7%81%A3%E5%93%81%E7%89%8C-%E5%A5%B9%E8%A6%AA%E6%8F%AD%E4%B8%BB%E5%9B%A0-025300903.html,砸百萬請粉絲吃海底撈！李多慧被問「為何不選台灣品牌」？她親揭主因,clickbait,clickbait,0.78,TRUE
+C093,Yahoo,https://tw.news.yahoo.com/%E8%A5%BF%E7%8F%AD%E7%89%99%E8%BC%95%E5%8F%96%E5%A5%A7%E5%9C%B0%E5%88%A9%EF%BC%81%E4%B8%BB%E5%B8%A5%E4%BF%A1%E5%BF%83%E7%8D%B2%E8%AD%89%E6%98%8E-%E4%BA%9E%E9%A6%AC%E7%88%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E7%9B%83%E7%8F%BE%E5%9C%A8%E6%89%8D%E9%96%8B%E5%A7%8B-230200168.html,西班牙輕取奧地利！主帥信心獲證明 亞馬爾：世界盃現在才開始,non_clickbait,non_clickbait,0.02,TRUE
+C094,ETtoday,https://star.ettoday.net/news/3194635,昆凌下廚甜叫周杰倫試菜！老公暱稱曝光…8歲萌兒Romeo貼心洗碗,clickbait,clickbait,0.31,TRUE
+C095,ETtoday,https://www.ettoday.net/news/20260702/3194066.htm,兒女還在讀書！55歲失業父找到新工作...第一天下班就被毒駕撞死,non_clickbait,clickbait,0.58,FALSE
+C096,ETtoday,https://www.ettoday.net/news/20260703/3194636.htm,500多萬名畫真跡失蹤　竟是大叔「誤以為垃圾」撿回家,clickbait,clickbait,0.73,TRUE
+C097,UDN,https://udn.com/news/story/120912/9604345?list_ch2_index,家樂福改名掀話題 一票人點名這地標最難改口：叫錯40年,clickbait,clickbait,0.82,TRUE
+C098,UDN,https://udn.com/news/story/7315/9604573?list_ch2_index,懷疑乾哥、乾妹同居不單純 前男友登門興師問罪慘遭一刀穿心,non_clickbait,clickbait,0.5,FALSE
+C099,UDN,https://udn.com/news/story/6656/9604547?list_ch2_index,藍批賴總統雙標：立委賴清德曾主提兩特別條例共框1033億元,non_clickbait,non_clickbait,0.01,TRUE
+C100,ETtoday,https://www.ettoday.net/news/20260703/3193811.htm,演藝圈「最凍齡的女星」是誰？　一票點名她：沒有醫美痕跡,clickbait,clickbait,0.9,TRUE

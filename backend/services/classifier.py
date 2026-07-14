@@ -29,7 +29,6 @@ def mock_classify_title(title: str) -> dict:
     return {
         "label": CLICKBAIT_LABEL,
         "score": min(0.55 + len(matched_keywords) * 0.12, 0.95),
-        "matchedKeywords": matched_keywords,
         "mode": "mock",
     }
 
@@ -69,14 +68,19 @@ def model_classify_title(title: str) -> dict:
 
     raw_label = output.get("label", "")
     confidence = float(output.get("score", 0.0))
-    label = normalize_model_label(raw_label)
+    model_label = normalize_model_label(raw_label)
+
+    score = to_clickbait_score(model_label, confidence)
+    label = (
+        CLICKBAIT_LABEL
+        if score >= settings.clickbait_threshold
+        else NON_CLICKBAIT_LABEL
+    )
 
     return {
         "label": label,
-        "score": to_clickbait_score(label, confidence),
-        "matchedKeywords": [],
+        "score": score,
         "mode": "model",
-        "rawLabel": raw_label,
     }
 
 

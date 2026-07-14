@@ -36,7 +36,7 @@ This version is a personal rebuild and extension of a junior-year undergraduate 
 
 ``` mermaid
 flowchart TD
-    A[Supported News Website] --> B[Chrome Extension]
+    A[Supported News Websites] --> B[Chrome Extension]
     B --> C[Headline Candidate Extraction]
     C --> D[FastAPI Backend]
 
@@ -44,7 +44,7 @@ flowchart TD
     E --> F[Yellow Highlight]
     F --> B
 
-    B -- User hovers highlighted headline --> D
+    B -- User hovers --> D
     D --> G[Article Extractor]
     G --> H[Gemini Rewriter]
     H --> I[Tooltip: Original + Rewritten]
@@ -99,6 +99,10 @@ clickbait-rewriter/
 │       ├── classifier.py
 │       ├── article_extractor.py
 │       └── rewriter.py
+├── evaluation/
+│   ├── README.md
+│   ├── classification_samples.csv
+│   ├── rewrite_samples.csv
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
@@ -132,7 +136,7 @@ CLASSIFIER_MODEL_NAME=Stremie/xlm-roberta-base-clickbait
 GEMINI_API_KEY=your_api_key_here
 GEMINI_MODEL_NAME=gemini-2.5-flash-lite
 
-CLICKBAIT_THRESHOLD=0.7
+CLICKBAIT_THRESHOLD=0.3
 MAX_CANDIDATES=100
 MAX_REWRITES=5
 ```

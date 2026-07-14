@@ -33,7 +33,7 @@ def build_rewrite_prompt(original_title: str, article_text: str) -> str:
     article_text = clean_text(article_text)[:MAX_ARTICLE_CHARS_FOR_REWRITE]
 
     return f"""
-你是專業新聞編輯，請將提供的【原標題】改寫為中性、精確且資訊完整的標題，應保留可讀性與資訊吸引力，但不可製造懸念或隱藏關鍵答案。
+你是專業新聞編輯，請將提供的【原標題】改寫為中性、精確且資訊完整的標題，應保留可讀性與資訊吸引力，避免寫成新聞摘要或完整敘述句，但不可製造懸念或隱藏關鍵答案。
 
 ### 核心要求
 1. 直接破梗：若原標題隱藏關鍵資訊（如星座、數字、具體步驟），必須在標題中具體列出，不需點閱內文即可獲取核心解答。
