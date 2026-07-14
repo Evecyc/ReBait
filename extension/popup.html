@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clickbait Rewriter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <main class="popup">
+    <header class="popup-header">
+      <h1>Clickbait Rewriter</h1>
+
+      <div class="system-status">
+        <span id="status-dot" class="status-dot"></span>
+        <span id="status-text">Checking...</span>
+      </div>
+    </header>
+
+    <div id="supported-content">
+      <section class="stats">
+        <div class="stat">
+          <strong id="scanned-count">0</strong>
+          <span>Scanned</span>
+        </div>
+
+        <div class="stat">
+          <strong id="clickbait-count">0</strong>
+          <span>Clickbait</span>
+        </div>
+
+        <div class="stat">
+          <strong id="rewritten-count">0</strong>
+          <span>Rewritten</span>
+        </div>
+      </section>
+
+      <section class="settings">
+        <label class="setting-row">
+          <span>Highlight headlines</span>
+          <input id="highlight-toggle" type="checkbox" />
+        </label>
+
+        <label class="setting-row">
+          <span>Rewrite on hover</span>
+          <input id="rewrite-toggle" type="checkbox" />
+        </label>
+      </section>
+    </div>
+
+    <p id="unsupported-message" class="unsupported-message hidden">
+      This website is not supported.
+    </p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

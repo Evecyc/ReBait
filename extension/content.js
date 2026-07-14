@@ -7,7 +7,6 @@ const MIN_CANDIDATE_SCORE = 2;
 
 const SCAN_DELAY_MS = 1000;
 const SCAN_COOLDOWN_MS = 5000;
-const MAX_AUTO_ARTICLE_EXTRACTIONS = 6;
 
 const BLOCKED_TEXT_KEYWORDS = [
   "廣告", "AD", "Ad", "贊助", "工商",
@@ -23,10 +22,20 @@ const BLOCKED_URL_PATTERNS = [
   "ad.", "/ad", "adclick", "doubleclick", "googlesyndication"
 ];
 
+const pageStats = {
+  scanned: 0,
+  clickbait: 0,
+  rewritten: 0
+};
+
 let lastScanSignature = "";
 let lastScanTime = 0;
 let scanTimer = null;
 let activeTooltipAnchor = null;
+let extensionSettings = {
+  highlightEnabled: true,
+  rewriteEnabled: true
+};
 
 function cleanText(text) {
   return (text || "").replace(/\s+/g, " ").trim();
@@ -266,6 +275,13 @@ function updateTooltip(candidate) {
 }
 
 function showTooltip(anchor) {
+  if (
+    !extensionSettings.highlightEnabled ||
+    !extensionSettings.rewriteEnabled
+  ) {
+    return;
+  }
+
   removeTooltip();
 
   const candidate = anchor.__crCandidate;
@@ -279,6 +295,7 @@ function showTooltip(anchor) {
   tooltip.textContent = anchor.dataset.crTooltip || "";
 
   const rect = anchor.getBoundingClientRect();
+
   tooltip.style.top = `${rect.bottom + window.scrollY + 6}px`;
   tooltip.style.left = `${rect.left + window.scrollX}px`;
 
@@ -330,6 +347,13 @@ async function extractArticleAndUpdate(candidate) {
 }
 
 function startArticleExtraction(candidate) {
+  if (
+    !extensionSettings.highlightEnabled ||
+    !extensionSettings.rewriteEnabled
+  ) {
+    return;
+  }
+
   extractArticleAndUpdate(candidate);
 }
 
@@ -353,6 +377,7 @@ async function rewriteAndUpdate(candidate) {
 
     candidate.rewriteStatus = "success";
     candidate.rewrite = rewrite;
+    pageStats.rewritten += 1;
     updateTooltip(candidate);
   } catch (error) {
     console.error("[Clickbait Rewriter] Rewrite error:", error);
@@ -364,17 +389,14 @@ async function rewriteAndUpdate(candidate) {
 }
 
 function startRewrite(candidate) {
-  rewriteAndUpdate(candidate);
-}
-
-async function extractTopArticles(candidates) {
-  const targets = [...candidates]
-    .sort((a, b) => b.classification.score - a.classification.score)
-    .slice(0, MAX_AUTO_ARTICLE_EXTRACTIONS);
-
-  for (const candidate of targets) {
-    await extractArticleAndUpdate(candidate);
+  if (
+    !extensionSettings.highlightEnabled ||
+    !extensionSettings.rewriteEnabled
+  ) {
+    return;
   }
+
+  rewriteAndUpdate(candidate);
 }
 
 function clearHighlights(candidates) {
@@ -454,8 +476,14 @@ async function classifyAndRender(candidates) {
     }
 
     clearHighlights(candidates);
-    const clickbaitCandidates = applyClassificationResults(candidates, response.results);
-    extractTopArticles(clickbaitCandidates);
+
+    const clickbaitCandidates = applyClassificationResults(
+      candidates,
+      response.results
+    );
+
+    pageStats.clickbait = clickbaitCandidates.length;
+
   } catch (error) {
     console.error("[Clickbait Rewriter] Classification error:", error);
   }
@@ -464,6 +492,9 @@ async function classifyAndRender(candidates) {
 function runCandidateScan() {
   const now = Date.now();
   const candidates = collectHeadlineCandidates();
+
+  pageStats.scanned = candidates.length;
+
   const signature = createScanSignature(candidates);
 
   if (shouldSkipScan(signature, now)) return;
@@ -480,11 +511,67 @@ function scheduleCandidateScan() {
   scanTimer = setTimeout(runCandidateScan, SCAN_DELAY_MS);
 }
 
-runCandidateScan();
+function updateHighlightVisibility() {
+  document.documentElement.classList.toggle(
+    "cr-highlights-disabled",
+    !extensionSettings.highlightEnabled
+  );
+}
+
+async function loadExtensionSettings() {
+  const storedSettings = await chrome.storage.local.get({
+    highlightEnabled: true,
+    rewriteEnabled: true
+  });
+
+  extensionSettings = storedSettings;
+  updateHighlightVisibility();
+}
+
+async function initialize() {
+  await loadExtensionSettings();
+  await runCandidateScan();
+}
+
+initialize();
 
 const observer = new MutationObserver(scheduleCandidateScan);
 
 observer.observe(document.body, {
   childList: true,
   subtree: true
+});
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === "getPageStats") {
+    sendResponse({
+      ...pageStats
+    });
+
+    return;
+  }
+
+  if (message.action === "settingsUpdated") {
+    extensionSettings = {
+      ...extensionSettings,
+      ...message.settings
+    };
+
+    if (!extensionSettings.highlightEnabled) {
+      extensionSettings.rewriteEnabled = false;
+    }
+
+    updateHighlightVisibility();
+
+    if (
+      !extensionSettings.highlightEnabled ||
+      !extensionSettings.rewriteEnabled
+    ) {
+      removeTooltip();
+    }
+
+    sendResponse({
+      status: "ok"
+    });
+  }
 });

@@ -3,6 +3,11 @@
   outline: 2px solid rgba(255, 180, 0, 0.9) !important;
 }
 
+.cr-highlights-disabled .cr-clickbait-highlight {
+  background-color: transparent !important;
+  outline: none !important;
+}
+
 .cr-tooltip {
   position: absolute;
   max-width: 420px;

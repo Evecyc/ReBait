@@ -30,7 +30,11 @@ This version is a personal rebuild and extension of a junior-year undergraduate 
 
 ### ETtoday rewrite result
 
-![ETtoday rewrite result](assets/ettoday_rewrite.png)
+![ETtoday rewrite](assets/ettoday_rewrite.png)
+
+### Popup
+
+![Popup](assets/popup.png)
 
 ## Architecture
 
@@ -58,6 +62,7 @@ flowchart TD
 -   Extracts article content from the original news page
 -   Rewrites headlines with Gemini using article-level context
 -   Shows live processing status and rewritten results in a tooltip
+-   Toggle highlighting and rewriting independently from the popup
 
 ## Tech Stack
 
@@ -84,13 +89,9 @@ flowchart TD
 clickbait-rewriter/
 ├── assets/
 │   ├── demo_yahoo.gif
+│   ├── udn_highlight.png
 │   ├── ettoday_rewrite.png
-│   └── udn_highlight.png
-├── extension/
-│   ├── manifest.json
-│   ├── content.js
-│   ├── background.js
-│   └── style.css
+│   └── popup.png
 ├── backend/
 │   ├── main.py
 │   ├── config.py
@@ -99,10 +100,18 @@ clickbait-rewriter/
 │       ├── classifier.py
 │       ├── article_extractor.py
 │       └── rewriter.py
+├── extension/
+│   ├── manifest.json
+│   ├── content.js
+│   ├── background.js
+│   ├── popup.css
+│   ├── popup.html
+│   ├── popup.js
+│   └── style.css
 ├── evaluation/
 │   ├── README.md
 │   ├── classification_samples.csv
-│   ├── rewrite_samples.csv
+│   └── rewrite_samples.csv
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
@@ -219,5 +228,4 @@ http://127.0.0.1:8000/docs
 
 -   Article extraction quality depends on each website's HTML structure.
 -   Gemini API quota may limit rewrite availability.
--   Gemini rewriting may take several seconds because the model receives article context.
 -   Generated rewrites may still require prompt tuning for different news categories.

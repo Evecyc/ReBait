@@ -1,14 +1,21 @@
 {
   "manifest_version": 3,
   "name": "Clickbait Rewriter",
-  "version": "0.1.0",
-  "description": "Detects clickbait-style headlines and rewrites them with article context.",
-  "permissions": ["activeTab"],
+  "version": "1.2",
+  "description": "Rewrites clickbait headlines on Yahoo News, ETtoday, and UDN.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
   "host_permissions": [
     "https://tw.news.yahoo.com/*",
     "https://www.ettoday.net/*",
-    "https://udn.com/*"
+    "https://udn.com/*",
+    "http://127.0.0.1:8000/*"
   ],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "background": {
     "service_worker": "background.js"
   },
