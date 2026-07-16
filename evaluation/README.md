@@ -8,7 +8,7 @@ The evaluation includes:
 
 -   clickbait classification evaluation
 -   headline rewrite quality evaluation
--   error analysis
+-   overall system analysis
 
 ## Classification Evaluation
 
@@ -60,8 +60,28 @@ Each criterion is rated from 1 (poor) to 5 (excellent):
 
 ### Method
 
+The rewrite evaluation uses 25 manually selected clickbait headlines collected from Yahoo News Taiwan, ETtoday, and UDN.
+
+Each rewritten headline was manually evaluated using the four criteria above, and the overall result is calculated as the average score of the four criteria.
+
 ### Results
+
+| Metric | Score |
+|--------|------:|
+| Clarity | 4.84 |
+| Informativeness | 4.44 |
+| Faithfulness | 5.00 |
+| Readability | 4.68 |
+| Overall | **4.74 / 5.00** |
 
 ### Analysis
 
-## Error Analysis
+The rewritten headlines consistently preserved the original article content while reducing sensational or ambiguous wording.
+
+Faithfulness achieved the highest score, indicating that the system rarely introduced unsupported information. Lower scores were primarily associated with headlines that did not fully reveal hidden information or occasionally resembled news summaries rather than concise headlines.
+
+## Overall Analysis
+
+The classification and rewrite evaluations demonstrate that the system can reliably detect clickbait headlines and generate more informative, neutral, and faithful alternatives.
+
+The main remaining limitations include borderline clickbait headlines that are difficult to classify, rewritten headlines that occasionally omit part of the hidden information, and dependency on the Gemini API, whose free-tier quota and service availability may affect rewriting performance.
