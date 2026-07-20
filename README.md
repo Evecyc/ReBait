@@ -154,8 +154,7 @@ CLICKBAIT_THRESHOLD=0.3
 ### Start the Backend
 
 ``` bash
-cd backend
-uvicorn main:app --reload
+python -m uvicorn backend.main:app --reload
 ```
 
 Backend URLs:
