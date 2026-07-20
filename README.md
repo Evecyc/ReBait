@@ -193,7 +193,26 @@ http://127.0.0.1:8000/docs
 
 ## Evaluation
 
-Evaluation datasets and results are available in the `evaluation/` directory.
+### Clickbait Classification
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 82.0% |
+| Precision | 86.4% |
+| Recall | 76.0% |
+| F1 Score | 80.9% |
+
+### Rewrite Quality
+
+| Metric | Score |
+|---|---:|
+| Clarity | 4.84 / 5 |
+| Informativeness | 4.44 / 5 |
+| Faithfulness | 5.00 / 5 |
+| Readability | 4.68 / 5 |
+| Overall | 4.74 / 5 |
+
+Details are available in the `evaluation/` directory.
 
 ## Testing
 
