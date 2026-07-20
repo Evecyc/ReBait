@@ -22,7 +22,6 @@ def mock_classify_title(title: str) -> dict:
         return {
             "label": NON_CLICKBAIT_LABEL,
             "score": 0.18,
-            "matchedKeywords": [],
             "mode": "mock",
         }
 

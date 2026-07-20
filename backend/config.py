@@ -10,8 +10,6 @@ class Settings:
     gemini_model_name: str = os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash-lite")
 
     clickbait_threshold: float = float(os.getenv("CLICKBAIT_THRESHOLD", "0.3"))
-    max_candidates: int = int(os.getenv("MAX_CANDIDATES", "100"))
-    max_rewrites: int = int(os.getenv("MAX_REWRITES", "5"))
 
     classifier_mode: str = os.getenv("CLASSIFIER_MODE", "mock")
     classifier_model_name: str = os.getenv(

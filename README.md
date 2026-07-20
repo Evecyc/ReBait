@@ -57,12 +57,12 @@ flowchart TD
 
 ## Features
 
--   Support Yahoo News Taiwan, ETtoday, and UDN
+-   Supports Yahoo News Taiwan, ETtoday, and UDN
 -   Detects and highlights clickbait-style headlines on supported news websites
 -   Extracts article content from the original news page
 -   Rewrites headlines with Gemini using article-level context
 -   Shows live processing status and rewritten results in a tooltip
--   Toggle highlighting and rewriting independently from the popup
+-   Control headline highlighting and hover-based rewriting from the popup
 
 ## Tech Stack
 
@@ -146,8 +146,6 @@ GEMINI_API_KEY=your_api_key_here
 GEMINI_MODEL_NAME=gemini-2.5-flash-lite
 
 CLICKBAIT_THRESHOLD=0.3
-MAX_CANDIDATES=100
-MAX_REWRITES=5
 ```
 
 ### Start the Backend

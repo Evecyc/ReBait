@@ -28,6 +28,8 @@ const pageStats = {
   rewritten: 0
 };
 
+const rewriteCache = new Map();
+
 let lastScanSignature = "";
 let lastScanTime = 0;
 let scanTimer = null;
@@ -377,6 +379,14 @@ async function rewriteAndUpdate(candidate) {
 
     candidate.rewriteStatus = "success";
     candidate.rewrite = rewrite;
+
+    rewriteCache.set(candidate.id, {
+      articleStatus: candidate.articleStatus,
+      article: candidate.article,
+      rewriteStatus: candidate.rewriteStatus,
+      rewrite: candidate.rewrite
+    });
+
     pageStats.rewritten += 1;
     updateTooltip(candidate);
   } catch (error) {
@@ -399,12 +409,14 @@ function startRewrite(candidate) {
   rewriteAndUpdate(candidate);
 }
 
-function clearHighlights(candidates) {
-  candidates.forEach((candidate) => {
-    candidate.element.classList.remove("cr-clickbait-highlight");
-    delete candidate.element.dataset.crTooltip;
-    candidate.element.__crCandidate = null;
-  });
+function clearHighlights() {
+  document
+    .querySelectorAll(".cr-clickbait-highlight")
+    .forEach((element) => {
+      element.classList.remove("cr-clickbait-highlight");
+      delete element.dataset.crTooltip;
+      element.__crCandidate = null;
+    });
 
   removeTooltip();
 }
@@ -418,15 +430,32 @@ function applyClassificationResults(candidates, results) {
 
   for (const result of results) {
     const candidate = candidateById.get(result.id);
-    if (!candidate || result.classification.label !== "clickbait") continue;
+
+    if (
+      !candidate ||
+      result.classification.label !== "clickbait"
+    ) {
+      continue;
+    }
 
     candidate.classification = result.classification;
-    candidate.articleStatus = "idle";
-    candidate.article = null;
-    candidate.rewriteStatus = "idle";
-    candidate.rewrite = null;
+
+    const cachedState = rewriteCache.get(candidate.id);
+
+    if (cachedState) {
+      candidate.articleStatus = cachedState.articleStatus;
+      candidate.article = cachedState.article;
+      candidate.rewriteStatus = cachedState.rewriteStatus;
+      candidate.rewrite = cachedState.rewrite;
+    } else {
+      candidate.articleStatus = "idle";
+      candidate.article = null;
+      candidate.rewriteStatus = "idle";
+      candidate.rewrite = null;
+    }
 
     candidate.element.classList.add("cr-clickbait-highlight");
+
     updateTooltip(candidate);
     bindTooltip(candidate.element, candidate);
 
@@ -475,7 +504,7 @@ async function classifyAndRender(candidates) {
       return;
     }
 
-    clearHighlights(candidates);
+    clearHighlights();
 
     const clickbaitCandidates = applyClassificationResults(
       candidates,
