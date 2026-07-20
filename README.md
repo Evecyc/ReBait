@@ -193,6 +193,8 @@ http://127.0.0.1:8000/docs
 
 ## Evaluation
 
+Details are available in the `evaluation/` directory.
+
 ### Clickbait Classification
 
 | Metric | Score |
@@ -211,8 +213,6 @@ http://127.0.0.1:8000/docs
 | Faithfulness | 5.00 / 5 |
 | Readability | 4.68 / 5 |
 | Overall | 4.74 / 5 |
-
-Details are available in the `evaluation/` directory.
 
 ## Testing
 
