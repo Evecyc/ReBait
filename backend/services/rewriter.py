@@ -2,7 +2,7 @@ import json
 import re
 import time
 
-from config import settings
+from ..config import settings
 
 
 MAX_ARTICLE_CHARS_FOR_REWRITE = 4000

@@ -1,22 +1,26 @@
+<a id="top"></a>
+
 # Clickbait Rewriter
 
-## Overview
-
-Many news websites use headlines that hide key information, exaggerate emotion, or encourage users to click before understanding the main point. This project reduces that information gap by rewriting suspicious headlines with article-level context.
-
-The system runs locally:
-
-``` text
-News website
-→ Chrome Extension
-→ FastAPI backend
-→ headline classification
-→ article extraction
-→ Gemini rewrite
-→ tooltip display
-```
+Many news websites use headlines that hide key information, exaggerate emotion, or encourage users to click before understanding the main point. This project rewrites potentially clickbait headlines using article-level context, helping readers understand the main idea before deciding whether to open the article.
 
 This version is a personal rebuild and extension of a junior-year undergraduate research project originally developed with teammates and supported by Taiwan's NSTC Undergraduate Research Project grant.
+
+<details>
+<summary><strong>Table of Contents</strong></summary>
+
+- [Demo](#demo)
+- [Architecture](#architecture)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Running the Project](#running-the-project)
+- [API Overview](#api-overview)
+- [Evaluation](#evaluation)
+- [Testing](#testing)
+- [Limitations](#limitations)
+
+</details>
 
 ## Demo
 
@@ -37,6 +41,18 @@ This version is a personal rebuild and extension of a junior-year undergraduate 
 ![Popup](assets/popup.png)
 
 ## Architecture
+
+Overall workflow:
+
+``` text
+News website
+→ Chrome Extension
+→ FastAPI backend
+→ Headline classification
+→ Article extraction
+→ Gemini rewrite
+→ Highlight & tooltip display
+```
 
 ``` mermaid
 flowchart TD
@@ -88,30 +104,17 @@ flowchart TD
 ``` text
 clickbait-rewriter/
 ├── assets/
-│   ├── demo_yahoo.gif
-│   ├── udn_highlight.png
-│   ├── ettoday_rewrite.png
-│   └── popup.png
 ├── backend/
-│   ├── main.py
-│   ├── config.py
-│   ├── schemas.py
+│   ├── main.py         # FastAPI entry point
+│   ├── config.py       # Configuration
+│   ├── schemas.py      # Pydantic models
 │   └── services/
 │       ├── classifier.py
 │       ├── article_extractor.py
 │       └── rewriter.py
 ├── extension/
-│   ├── manifest.json
-│   ├── content.js
-│   ├── background.js
-│   ├── popup.css
-│   ├── popup.html
-│   ├── popup.js
-│   └── style.css
-├── evaluation/
-│   ├── README.md
-│   ├── classification_samples.csv
-│   └── rewrite_samples.csv
+├── evaluation/         # Evaluation results
+├── tests/              # Pytest test suite
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
@@ -168,42 +171,10 @@ http://127.0.0.1:8000/docs
 2.  Enable **Developer mode**
 3.  Click **Load unpacked**
 4.  Select the `extension/` folder
-5.  Open a supported news website
 
-## Usage
+### Usage
 
-When a supported news page is opened, suspicious headlines are highlighted in yellow.
-
-Hovering over a highlighted headline triggers article extraction and headline rewriting.
-
-### Processing Status
-
-The tooltip shows live status updates:
-
-``` text
-Extracting article...
-Article extracted, xxxx chars. Rewriting...
-Rewrite completed
-```
-
-If the pipeline fails, the tooltip shows a failure state:
-
-``` text
-Article extraction failed
-Rewrite unavailable
-```
-
-### Rewrite Result
-
-After rewriting succeeds, the tooltip shows:
-
-``` text
-Original:
-<full original headline>
-
-Rewritten:
-<rewritten headline>
-```
+Open a supported news website and hover over highlighted headlines to view rewritten versions generated from article-level context.
 
 ## API Overview
 
@@ -222,8 +193,30 @@ Interactive API documentation is available at:
 http://127.0.0.1:8000/docs
 ```
 
+## Evaluation
+
+Evaluation datasets and results are available in the `evaluation/` directory.
+
+## Testing
+
+Run all tests:
+
+```bash
+pytest
+```
+
+Current test status:
+
+```text
+28 passed
+```
+
 ## Limitations
 
 -   Article extraction quality depends on each website's HTML structure.
 -   Gemini API quota may limit rewrite availability.
 -   Generated rewrites may still require prompt tuning for different news categories.
+
+<p align="right">
+  <a href="#top">Back to top ↑</a>
+</p>

@@ -1,18 +1,12 @@
-# API server
 fastapi
 uvicorn
 python-dotenv
 pydantic
-
-# Article extraction
 requests
 beautifulsoup4
 trafilatura
 readability-lxml
-
-# ML classifier
 transformers
 torch
-
-# LLM rewriting
 google-genai
+pytest

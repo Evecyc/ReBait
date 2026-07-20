@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-from config import settings
+from ..config import settings
 
 CLICKBAIT_LABEL = "clickbait"
 NON_CLICKBAIT_LABEL = "non_clickbait"

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from schemas import (
+from .schemas import (
     HealthResponse,
     ClassifyRequest,
     ClassifyResponse,
@@ -14,9 +14,9 @@ from schemas import (
     RewriteResponse,
     RewriteResult,
 )
-from services.classifier import classify_candidates
-from services.article_extractor import extract_article
-from services.rewriter import rewrite_title
+from .services.classifier import classify_candidates
+from .services.article_extractor import extract_article
+from .services.rewriter import rewrite_title
 
 app = FastAPI(title="Clickbait Rewriter API")
 
