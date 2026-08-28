@@ -4,7 +4,7 @@
 
 Many news websites use headlines that hide key information, exaggerate emotion, or encourage users to click before understanding the main point. This project rewrites potentially clickbait headlines using article-level context, helping readers understand the main idea before deciding whether to open the article.
 
-This project is a personal rebuild and extension of an undergraduate research project originally developed with teammates under Taiwan's NSTC Undergraduate Research Project program.
+This project is a personal rebuild and extension of an undergraduate research project originally developed with teammates under Taiwan's NSTC Undergraduate Research Project program. The original team project was later accepted for publication at the ACM RecSys 2026 Demos Track.
 
 <details>
 <summary><strong>Table of Contents</strong></summary>
