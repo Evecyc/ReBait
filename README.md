@@ -6,7 +6,7 @@ ReBait is a browser extension that helps readers make informed choices before cl
 
 📄 [Paper](https://dl.acm.org/doi/10.1145/3773078.3841264) · 🖼️ [Poster](assets/RecSys-Poster.pdf) · ▶️ [Web Demo & Video](https://rebait-recsys-demo.pages.dev/)
 
-This repository includes the Chinese implementation for Taiwanese news websites and an English demonstration prepared for RecSys 2026. The web demo provides an interactive replay of previously generated results, along with a video of the extension in use.
+This repository contains the Chinese implementation for Taiwanese news websites. A separate English demo prepared for RecSys 2026 is available through the web demo and video linked above.
 
 This project builds on a collaborative undergraduate research project supported by Taiwan’s NSTC Undergraduate Research Project program.
 
@@ -30,9 +30,7 @@ This project builds on a collaborative undergraduate research project supported 
 
 ### English Demo — RecSys 2026
 
-The English demo showcases ReBait on a curated feed of real news articles and on Upworthy. Hovering over highlighted headlines reveals article-grounded suggestions that provide information omitted from the original headline.
-
-The web demo linked above includes an interactive replay using saved results and a video of the extension in use. No installation or API key is required to explore the replay.
+The English demo showcases ReBait on a curated feed of real news articles and on Upworthy. The web demo linked above includes an interactive replay using saved results and a video of the extension in use. No installation or API key is required to explore the replay.
 
 ### Chinese Website Examples
 
