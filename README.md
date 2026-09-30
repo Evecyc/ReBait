@@ -1,10 +1,14 @@
 <a id="top"></a>
 
-# Clickbait Rewriter
+# ReBait: From Clickbait to Informed Choice
 
-Many news websites use headlines that hide key information, exaggerate emotion, or encourage users to click before understanding the main point. This project rewrites potentially clickbait headlines using article-level context, helping readers understand the main idea before deciding whether to open the article.
+ReBait is a browser extension that helps readers make informed choices before clicking on news headlines. It detects potential clickbait and provides article-grounded headline suggestions on hover, while preserving the original headlines, links, and feed order.
 
-This project is a personal rebuild and extension of an undergraduate research project originally developed with teammates under Taiwan's NSTC Undergraduate Research Project program. The original team project was later accepted for publication at the ACM RecSys 2026 Demos Track.
+📄 [Paper](https://dl.acm.org/doi/10.1145/3773078.3841264) · 🖼️ [Poster](assets/RecSys-Poster.pdf) · ▶️ [Web Demo & Video](https://rebait-recsys-demo.pages.dev/)
+
+This repository includes the Chinese implementation for Taiwanese news websites and an English demonstration prepared for RecSys 2026. The web demo provides an interactive replay of previously generated results, along with a video of the extension in use.
+
+This project builds on a collaborative undergraduate research project supported by Taiwan’s NSTC Undergraduate Research Project program.
 
 <details>
 <summary><strong>Table of Contents</strong></summary>
@@ -24,21 +28,41 @@ This project is a personal rebuild and extension of an undergraduate research pr
 
 ## Demo
 
-### End-to-end workflow on Yahoo News Taiwan
+### English Demo — RecSys 2026
 
+The English demo showcases ReBait on a curated feed of real news articles and on Upworthy. Hovering over highlighted headlines reveals article-grounded suggestions that provide information omitted from the original headline.
+
+The web demo linked above includes an interactive replay using saved results and a video of the extension in use. No installation or API key is required to explore the replay.
+
+### Chinese Website Examples
+
+<details>
+<summary>End-to-end workflow on Yahoo News Taiwan</summary>
+    
 ![Yahoo demo](assets/demo_yahoo.gif)
 
-### UDN headline highlighting
+</details>
 
+<details>
+<summary>UDN headline highlighting</summary>
+    
 ![UDN highlight](assets/udn_highlight.png)
 
-### ETtoday rewrite result
+</details>
 
+<details>
+<summary>ETtoday rewrite result</summary>
+    
 ![ETtoday rewrite](assets/ettoday_rewrite.png)
 
-### Popup
+</details>
+
+<details>
+<summary>Extension popup</summary>
 
 ![Popup](assets/popup.png)
+
+</details>
 
 ## Architecture
 
@@ -73,7 +97,7 @@ flowchart TD
 
 ## Features
 
--   Supports Yahoo News Taiwan, ETtoday, and UDN
+-   Supports Yahoo News Taiwan, ETtoday, and UDN (Upworthy for English demo)
 -   Detects and highlights clickbait-style headlines on supported news websites
 -   Extracts article content from the original news page
 -   Rewrites headlines with Gemini using article-level context
@@ -193,7 +217,7 @@ http://127.0.0.1:8000/docs
 
 ## Evaluation
 
-Details are available in the `evaluation/` directory.
+Details are available in the `evaluation/` directory. These results apply to the Chinese implementation, not the English demo.
 
 ### Clickbait Classification
 
